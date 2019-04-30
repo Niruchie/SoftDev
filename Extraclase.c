@@ -7,9 +7,10 @@ Pero para eso existen los nombres de varibles bien hechos :P...
 Este trabajo esta muy ordenado...
 
 Hexadecimales para las tildes y eñes:
-	0xA0 == 160: a tildada
-	0xA2 == 162: o tildada
-	0xA4 == 164: Letra ñ
+	0xA0 == 160: a tildada ;
+	0xA1 == 161: i tildada ;
+	0xA2 == 162: o tildada ;
+	0xA4 == 164: Letra ñ   ;
 *************************************************************************************************/
 
 //Incluimos librerias;
@@ -27,7 +28,7 @@ Hexadecimales para las tildes y eñes:
 
 main(){
 	//Variables contadoras y de opciones;
-	int i = 0, opt = 0, optSub = 0;
+	int i = 0, opt = 0, optSub = 0, optSuj = 0;
 	
 	//Error en caso de elegir la opción mal;
 	char errorOpt[] = "Escribiste una opci%cn no v%clida\n";
@@ -50,7 +51,7 @@ main(){
 		strcpy(SUB[1], "2) Estudios Sociales");
 		strcpy(SUB[2], "3) Matem%cticas");
 		strcpy(SUB[3], "4) Ciencias (F%csica)");
-		strcpy(SUB[4], "5) Ingles Academico");
+		strcpy(SUB[4], "5) Ingles Acad%cmico");
 		strcpy(SUB[5], "6) Ingles T%ccnico");
 	
 	
@@ -82,7 +83,12 @@ main(){
 					switch(optSub){
 						case 1:
 							system("cls");
-							
+							printf(SUB[0], 0xA4); //Español,     eñes  ;
+							printf(SUB[1]);
+							printf(SUB[2], 0xA0); //Matemáticas, tilde ;
+							printf(SUB[3], 0xA1); //Física,      tilde ;
+							printf(SUB[4], 0x82); //Académico,   tilde ;
+							printf(SUB[5], 0x82); //Técnico,     tilde ;
 							system("pause");
 							break;
 						case 2:
