@@ -90,12 +90,12 @@ main(){
 	
 	char DEFICIENCIAS[10][75];
 		strcpy(DEFICIENCIAS[0], "Bueno, entre las deficiencias la verdad nunca las habia pensado... \n");
-		strcpy(DEFICIENCIAS[1], "\n[1] La forma de comunicar las cosas a veces se me hace dificil   \n");
+		strcpy(DEFICIENCIAS[1], "[1] La forma de comunicar las cosas a veces se me hace dificil   \n");
 		strcpy(DEFICIENCIAS[2], "[+] no encuentro muy bien los modos de presentar enfrente de       \n");
 		strcpy(DEFICIENCIAS[3], "[+] algunas personas, pero muchos me dicen que lo hago bien, asi   \n");
 		strcpy(DEFICIENCIAS[4], "[+] que pienso que es confianza lo que debo de agarrar.            \n");
 		
-		strcpy(DEFICIENCIAS[5], "\n[2] Me cuesta aceptar la forma en que otros ordenan sus trabajos \n");
+		strcpy(DEFICIENCIAS[5], "[2] Me cuesta aceptar la forma en que otros ordenan sus trabajos \n");
 		strcpy(DEFICIENCIAS[6], "[+] a veces me pongo a ver la forma en la cual los otros trabajan y\n");
 		strcpy(DEFICIENCIAS[7], "[+] no me gusta, considero que podria ser un problema en Expotec y \n");
 		strcpy(DEFICIENCIAS[8], "[+] a lo mejor se hara una molestia, pero siempre trato que lo     \n");
@@ -103,8 +103,8 @@ main(){
 	
 	char FORTALEZAS[10][75];
 		strcpy(FORTALEZAS[0], "La verdad es que si creo que la mayor parte pertenecen aqui:          \n");
-		strcpy(FORTALEZAS[0], "\n[1] Entiendo muy bien el proceso logico por el cual pasan las cosas \n");
-		strcpy(FORTALEZAS[0], "[]\n");
+		strcpy(FORTALEZAS[0], "\t[1] Entiendo muy bien el proceso logico por el cual pasan las cosas \n");
+		strcpy(FORTALEZAS[0], "\t[+]\n");
 	
 	//Comienza con el nombre y la sección que no se repetirán;
 	system("cls");
@@ -337,6 +337,7 @@ main(){
 			case 2:
 				optSuj = 0;
 				do{
+					system("cls");
 					for(i=0; i<3; i++) printf(TALLER[i]);
 					printf("Escriba una opci%cn: X\b", 0xA2);
 					scanf("%d", &optSuj);
@@ -344,7 +345,14 @@ main(){
 						case 1:
 							for(i=0; i<10; i++){
 								printf(DEFICIENCIAS[i]);
-								printf("-------------------------------> MAS <-------------------------------");
+								if(i<9) printf("----------------------------> MAS <----------------------------");
+								system("pause>nul");
+								for(j=0; j<69; j++) printf("\b");
+							}
+						case 2:
+							for(i=0; i<10; i++){
+								printf(FORTALEZAS[i]);
+								if(i<9) printf("----------------------------> MAS <----------------------------");
 								system("pause>nul");
 								for(j=0; j<69; j++) printf("\b");
 							}
