@@ -1,0 +1,87 @@
+@font-face{
+	font-family: IndieFlower;
+	src: url("../fonts/IndieFlower.ttf");
+}
+body{
+	font-family: IndieFlower;
+	background-image: url("../img/js.png");
+	/*background-size: cover;*/
+	margin: 0;
+	padding: 0;
+}
+h1{
+	background-color: #FFDF00;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+	color: #FF0000;
+	text-align: center;
+}
+input{
+	padding: 0px;
+	width: 260px;
+	display: block;
+	margin: 5px;
+	height: 30px;
+	color: #666666;
+}
+.cmi{
+	background-color: rgba(0,0,0, 0)
+}
+.contenidos{
+	padding: 30px;
+	background-color: #55AA00;
+	border: 5px solid #FFFF00;
+	color: #FFFFFF;
+	width: 400px;
+	margin: 15px auto;
+	border-radius: 20px;
+	padding-left: 150px;
+}
+.boxes{
+	padding: 30px;
+	text-align: center;
+	background-color: #55AA00;
+	border: 3px solid #FFFF00;
+	width: 520px;
+	margin: 15px auto;
+	border-radius: 10px;
+	color: #FFFFFF;
+}
+.opac{
+	background-color: rgba(0,0,0, 0);
+	border: 3px solid rgba(0,0,0, 0);
+}
+#double{
+	height: 200px;
+	padding: 0;
+	width: 590px;
+}
+
+#tipoMasa{
+	padding: 30px;
+	text-align: center;
+	background-color: #55AA00;
+	border: 3px solid #FFFF00;
+	width: 210px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	float: left;
+}
+#commits{
+	padding: 30px;
+	text-align: center;
+	background-color: #55AA00;
+	border: 3px solid #FFFF00;
+	width: 210px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	float: right;
+}
+#piePrincipal{
+	color: #9F9F9F;
+	text-align: center;
+	margin-top: 250px;
+	background-color: rgba(0,0,0, .8);
+	clear: both;
+}

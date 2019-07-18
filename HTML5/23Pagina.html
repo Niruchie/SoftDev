@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+</head>
+<body>
+	<ol id="lista">
+		<li>San Jose</li>
+		<li>Alajuela</li>
+		<li>Heredia</li>
+	</ol>
+
+	<script type="text/javascript">
+		var elemento=document.createElement("li"),
+		contenido=document.createTextNode("Cartago");
+		elemento.appendChild(contenido);
+		var padre=document.getElementsByTagName('li')[0].parentNode;
+		primerElemento=document.getElementsByTagName('li')[0];
+		padre.appendChild(elemento);
+	</script>
+
+</body>
+</html>

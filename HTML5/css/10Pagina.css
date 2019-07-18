@@ -1,0 +1,55 @@
+body{
+	margin: 0;
+	background-image: url("../Imagenes/dollar.jpg");
+	/*background-size: cover;*/
+}
+h1{
+	background-color: rgba(54, 170, 99, .5);
+	width: 98.3%;
+	margin: auto;
+	padding: 10px;
+	color: #FFFFFF;
+	text-align: center;
+}
+input{
+	padding: 0px;
+	width: 260px;
+	display: block;
+	margin: 5px;
+	height: 30px;
+	color: #666666;
+}
+.contenidos{
+	padding: 30px;
+	background-color: rgba(54, 170, 99, .5);
+	border: 5px solid silver;
+	color: #FFFFFF;
+	width: 300px;
+	margin: 15px auto;
+	border-radius: 10px;
+}
+h2{font-size: 25px;}
+button{
+	margin: 5px;
+	padding: 5px;
+	height: 30px;
+	width: 270px;
+}
+#resultado{
+	font-family: Arial;
+	padding: 30px;
+	text-align: center;
+	background-color: rgb(54, 170, 99, .8);
+	border: 3px solid silver;
+	width: 300px;
+	margin: 15px auto;
+	border-radius: 10px;
+	color: #111;
+}
+#piePrincipal{
+	color: #FEFEFE;
+	text-align: center;
+	margin-top: 300px;
+	background-color: rgba(0,0,0, .8);
+	clear: both;
+}

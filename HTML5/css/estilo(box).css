@@ -1,0 +1,39 @@
+body{
+	background:linear-gradient(90deg,#0ff 0%, #000 100%);
+	font-family: arial, helvetica, sans-serif;
+}
+.container{
+	margin: 0 auto;
+	width: 80%;
+	background:#ffffff;
+	margin-top: 60px;
+	padding: 10px;
+
+}
+h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+.padding{
+	box-sizing: border-box;
+	height: 100px;
+	width: 300px;
+	background-color: cornflowerblue;
+	color:white;
+	padding: 50px;
+}
+.borde{
+	box-sizing: border-box;
+	height: 100px;
+	width: 300px;
+	background-color: coral;
+	border: 50px solid cornflowerblue;
+	color:white;
+	padding: 20px;
+}
+g{
+	font-size: 10px;
+	position: absolute;
+	text-align: center;
+	0
+}

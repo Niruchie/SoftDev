@@ -1,0 +1,43 @@
+.rojo{ background-color: #FF0000; }
+.azul{ background-color: #0000FF; }
+div.padre{
+	margin-top: 500px;
+	height: 400px;
+	width: 400px;
+	position: relative;
+}
+div.hijo{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+#piePrincipal{
+	height: 600px;
+	background-color: #555544;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	clear: both;
+}
+header{
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	background-color: orange;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+body{
+	background-color: grey;
+	margin: 0;
+}
+.logo{
+	width: 300px;
+	height: 150px;
+}

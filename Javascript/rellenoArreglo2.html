@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arreglos1</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			var amigosProfe = ["Carlos", "Jose",   "Mario"];
+			var amigasProfe = ["Tamara", "Sandra", "Mildred"];
+			amigasProfe[amigasProfe.length] = "Shirley";
+			amigosProfe.push("Manuel", "Rodrigo", "Jorge", "Leo");
+			document.write(amigosProfe.length + "<br>");
+			document.write(amigosProfe[amigosProfe.length-1] + "<br>");
+			document.write(amigosProfe + "<br>");
+			amigosProfe.pop();
+			var amixProfe = amigosProfe.concat(amigasProfe);
+			document.write(amixProfe.join(" : ") + "<br>");
+			var ordenado = amixProfe.sort();
+			document.write(ordenado + "<br>");
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

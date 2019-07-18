@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fechas</title>
+		<style>
+			body{
+				background-color: #123456;
+			}
+			canvas{
+				width: 800px;
+				height: 200px;
+				background-color: #FFFFFF;
+				color: #FF0000;
+				margin: auto;
+				margin-top: 30px;
+				display: flex;
+			}
+			div{
+				width: 400px;
+				height: 200px;
+				background-color: #F07000;
+				color: #FFFFFF;
+				margin: auto;
+				font-size: 6em;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="r"></div>
+		<canvas id="pong"></canvas>
+		<script type="text/javascript">
+
+			var h = 3;
+			var m = 0;
+			var s = 0;
+
+
+
+			(function(){
+			 	var timed = function(){
+			 		s--;
+			 		if (s == -1) {s = 59; m--;}
+			 		if (m == -1) {m = 59; h--;} 
+			 		if (h == -1) {
+			 			h = 0; m = 0; s = 0;
+			 			clearInterval(repeat);
+			 		}
+			 		document.getElementById("r").innerHTML = h+":"+m+":"+s;
+			 		
+			 	}
+			 	//setTimeout(timed, 1000);
+			 	var repeat = setInterval(timed, 1000);
+			}())
+
+			var canvas     = document.getElementById("pong");
+			var canvasDraw = canvas.getContext("2d");
+			canvasDraw.fillStyle = "rgba(255, 0, 0, 1)";
+
+			var ballX = true, ballY = true;
+
+			var x = 3, y = 5;
+			canvasDraw.fillRect(x, y, 2, 140);
+			    x = 295; y = 5;
+			canvasDraw.fillRect(x, y, 2, 140);
+				x = 150; y = 75;
+			canvasDraw.fillRect(x, y, 2, 4);
+
+
+			(function(){
+				
+			 	var ponging = function(){
+			 		console.log("("+x+":"+y+")");
+
+			 		canvasDraw.fillStyle = "rgba(255, 255, 255, 1)";
+			 		canvasDraw.fillRect(x, y, 4, 8);
+
+			 		if(ballX) x+=3; else x-=3;
+			 		if(ballY) y+=3; else y-=3;
+
+			 		if( y > 143){
+			 			ballY = false;
+			 			y-=6;
+			 		}
+			 		else if( y < 0){
+			 			ballY = true;
+			 			y+=6;
+			 		}
+
+			 		if( x > 291){
+			 			ballX = false;
+			 			x-=6;
+			 		}
+			 		else if( x < 6){
+			 			ballX = true;
+			 			x+=6;
+			 		}
+
+			 		canvasDraw.fillStyle = "rgba(255, 0, 0, 1)";
+					canvasDraw.fillRect(x, y, 2, 4);
+			 	}
+			 	//setTimeout(timed, 1000);
+			 	var repeat = setInterval(ponging, 20);
+			}())
+
+		</script>
+	</body>
+</html>

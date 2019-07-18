@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arreglos1</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			var V = new Array(10);
+			var    n = 0;
+			var cons = 0;
+			var cal  = 0;
+
+			var max = parseInt(prompt("Digite el maximo: "));
+			var min = parseInt(prompt("Digite el minimo: "));
+			
+			for(var i = 0; i < V.length; i++) V[i] = aleatorio(max, min);
+			for(var i = 0; i < V.length; i++) V[i] = document.write(V[i] + ", ");
+			document.write("<br>");
+
+			for(var i = 0; i < V.length; i++) V[i] = consecutivo();
+			document.write(V + "<br>");
+
+			for(var i = 0; i < V.length; i++) V[i] = peticion();
+			document.write(V + "<br>");
+
+
+			function aleatorio  (mx, my){ return Math.round(Math.random()*(mx-my)+my); }
+			function consecutivo()      {
+				cons = cons + 1;
+				return cons;
+			}
+			function peticion   ()      {
+				n = parseInt(prompt("Digite un número: "));
+				return n;
+			}
+
+
+			var indefinida;
+			var texto = "Las rosas";
+			n = 10;
+			var nani = texto * n;
+			n = null;
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

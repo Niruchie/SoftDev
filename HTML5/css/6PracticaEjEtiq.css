@@ -1,0 +1,25 @@
+nav ul li{
+	background-color: #00FF00;
+}
+figcaption + p{
+	background-color: #FFFF00;
+}
+img{
+	width: 10px;
+	height: 10px;
+}
+#navega ul li:nth-child(2){
+	background-color: #FF7700;
+}
+barraLateralTwo blockquote:nth-child(2){
+	background-color: #FF0000;
+}
+article *{
+	color: #FF7700;
+}
+h1, p, footer{
+	color: silver;
+}
+h2.titulo{
+	background-color: #0000FF;
+}

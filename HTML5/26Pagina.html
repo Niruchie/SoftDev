@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="refresh" content="1;URL='./26Pagina.html'">
+		<title>Fechas</title>
+	</head>
+	<body>
+		<p id="res"></p>
+		<p id="res1"></p>
+		<script type="text/javascript">
+		var dia = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+		var mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"];
+			(function(){ 
+			 	var fecha = new Date();
+			 	H         = fecha.getHours();
+			 	M         = fecha.getMinutes();
+			 	S         = fecha.getSeconds();
+			 	D         = fecha.getDay();
+			 	Ndia      = fecha.getDate();
+			 	Mes       = fecha.getMonth();
+			 	Ao        = fecha.getFullYear();
+			 	document.getElementById("res").innerHTML=dia[D]+" "+ Ndia+ " de "+mes[Mes]+" del "+ Ao;
+			 	document.getElementById("res1").innerHTML= "Hora"+" "+ H+ ":"+ M + ":" + S;
+			 }())
+		</script>
+	</body>
+</html>

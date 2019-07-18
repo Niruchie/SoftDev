@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atributos Dom</title>
+		<style>
+			.titulo{
+				border: 1px solid navy;
+				background: #ccc;
+				padding: 10px;
+			}
+			.tituloGrande{
+				font-size: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="encabezado" class="tituloGrande">Soy un encabezado</h1>
+		<script type="text/javascript">
+			var encabezado = document.getElementById("encabezado");
+			encabezado.className = encabezado.className.replace("tituloGrande", "titulo");
+		</script>
+	</body>
+</html>

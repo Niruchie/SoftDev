@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cine</title>
+		<link rel="stylesheet" type="text/css" href="css/29Pagina.css">
+	</head>
+	<body>
+		<header>
+			Cine
+		</header>
+		<div id="buttons">
+			<div id="buttonsInside">
+				<h2>Escoja sus asientos:</h2>
+				<input type="button" id="bt1"  onclick="add(this);" value="1" class="bts">
+				<input type="button" id="bt2"  onclick="add(this);" value="2" class="bts">
+				<input type="button" id="bt3"  onclick="add(this);" value="3" class="bts"><br>
+				<input type="button" id="bt4"  onclick="add(this);" value="4" class="bts">
+				<input type="button" id="bt5"  onclick="add(this);" value="5" class="bts">
+				<input type="button" id="bt6"  onclick="add(this);" value="6" class="bts"><br>
+				<input type="button" id="bt7"  onclick="add(this);" value="7" class="bts">
+				<input type="button" id="bt8"  onclick="add(this);" value="8" class="bts">
+				<input type="button" id="bt9"  onclick="add(this);" value="9" class="bts"><br>
+				<input type="button" id="bt10" onclick="add(this);" value="10" class="bts">
+				<input type="button" id="bt11" onclick="add(this);" value="11" class="bts">
+				<input type="button" id="bt12" onclick="add(this);" value="12" class="bts">
+			</div>
+			<input type="button" id="btCancelar" onclick="cancel(this);"                value="Cancelar" class="btsBottom" style="float: right;">
+			<input type="button" id="btComprar"  onclick="buyThat(this, 'btCancelar');" value="Comprar"  class="btsBottom">
+		</div>
+		<footer>
+			<small>Derechos Reservados</small>
+			<address>San José</address>
+		</footer>
+		<script type="text/javascript" src="js/29Pagina.js"></script>
+	</body>
+</html>

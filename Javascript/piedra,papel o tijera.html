@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Javascript</title>
+	<script type="text/javascript">
+			var j1= prompt(" Jugador 1: Digite piedra,papel o tijera");
+			var j2= prompt("Jugador 2: Digite piedra,papel o tijera");
+			if(isNaN(j1)){
+				if(isNaN(j2)){
+					j1=j1.toLowerCase();
+			j2=j2.toLowerCase();
+			if(j1==j2){
+					document.write("<font color='red'> Empate <br>");
+				}
+				else
+			if(j1=="tijera" && j2=="papel" || j1=="papel" && j2=="piedra" || j1=="piedra" && j2=="tijera"  ){
+				document.write("<font color='Green'> Gano Jugador 1 <br>");
+			}
+			else
+				document.write("<font color='Blue'> Gano Jugador 2 <br>");
+			
+						
+			}
+		}
+else 
+alert("Por favor no digite numeros");
+
+	</script>	
+</head>
+<body>
+
+</body>
+</html>

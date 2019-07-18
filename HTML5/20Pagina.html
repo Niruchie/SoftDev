@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atributos Dom</title>
+		<style>
+			p{
+				background: blue;
+			}
+			p#segundo{
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="titulo">Titulo de web</h1>
+		<div id="subtitulo"></div>
+
+		<p></p>
+		<p id="segundo"></p>
+		<p></p>
+
+		<script type="text/javascript">
+			var PElements  = document.getElementsByTagName("p");
+			var paragraph2 = document.getElementById("segundo");
+			var newElement = document.createElement("h2");
+			var content    = document.createTextNode("Nuevo subtitulo");
+
+			newElement.appendChild(content);
+			newElement.setAttribute("align", "center");
+			document.getElementById("subtitulo").appendChild(newElement);
+		</script>
+	</body>
+</html>

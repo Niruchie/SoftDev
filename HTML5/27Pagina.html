@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fechas</title>
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: #0000FF;
+				color: #000000;
+				margin: auto;
+				font-size: 35px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="r"></div>
+		<script type="text/javascript">
+			(function(){ 
+			 	var n = 0;
+			 	var timed = function(){
+			 		n++;
+			 		document.getElementById("r").innerHTML = n;
+			 		if(n==5) clearInterval(repeat);
+			 	}
+			 	//setTimeout(timed, 1000);
+			 	var repeat = setInterval(timed, 1000);
+			 }())
+		</script>
+	</body>
+</html>

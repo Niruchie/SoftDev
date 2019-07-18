@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arreglos1</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			var opt = prompt("Escriba 1 para jugar contra otro jugador. Escriba 2 para jugar contra la PC.");
+			switch(parseInt(opt)){
+				case 1:
+					var playerA = prompt("Escriba su jugada (Piedra, Papel, Tijera), Jugador 1:");
+					var playerB = prompt("Escriba su jugada (Piedra, Papel, Tijera), Jugador 2:");
+					playerA = playerA.toLowerCase();
+					playerB = playerB.toLowerCase();
+
+					     if( playerA == playerB ) 
+					    	document.write("Se ha producido un empate...");
+					else if(playerA=="tijera" && playerB=="papel" || playerA=="papel" && playerB=="piedra" || playerA=="piedra" && playerB=="tijera")
+						document.write("El jugador 1 ganó!<br>#Jugador 1: "+ playerA + "<br>#Jugador 2: " + playerB); else if(playerB=="tijera" && playerA=="papel" || playerB=="papel" && playerA=="piedra" || playerB=="piedra" && playerA=="tijera")
+						document.write("El jugador 2 ganó!<br>#Jugador 1: "+ playerA + "<br>#Jugador 2: " + playerB);
+					else
+						document.write("La entrada no era correcta. Recuerda que no es numérica<br>#Jugador 1: "+ playerA + "<br>#Jugador 2: " + playerB);
+					break;
+				case 2:
+					var PPT = ["piedra", "papel", "tijera"];
+					var xyz = Math.round(Math.random()*(2-0)+0);
+
+					var playerA = prompt("Escriba su jugada (Piedra, Papel, Tijera), Jugador 1:");
+					playerA = playerA.toLowerCase();
+
+					if( playerA == PPT[xyz] ) 
+					    	document.write("Se ha producido un empate...");
+					else if(playerA=="tijera" && PPT[xyz]=="papel" || playerA=="papel" && PPT[xyz]=="piedra" || playerA=="piedra" && PPT[xyz]=="tijera")
+						document.write("El jugador 1 ganó!<br>#Jugador 1: "+ playerA + "<br>#PC: " + PPT[xyz]);
+					else if(PPT[xyz]=="tijera" && playerA=="papel" || PPT[xyz]=="papel" && playerA=="piedra" || PPT[xyz]=="piedra" && playerA=="tijera")
+						document.write("La PC ganó!<br>#Jugador 1: "+ playerA + "<br>#PC: " + PPT[xyz]);
+					else
+						document.write("La entrada no era correcta. Recuerda que no es numérica<br>#Jugador 1: "+ playerA + "<br>#PC: " + PPT[xyz]);
+					break;
+				default:
+					document.write("La entrada no era correcta. Recuerda que es numérica: " + opt);
+					break;
+			}
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

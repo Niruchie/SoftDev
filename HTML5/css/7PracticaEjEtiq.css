@@ -1,0 +1,127 @@
+/*-------------------------------------*/
+@font-face{
+	font-family: IndieFlower;
+	src: url("../fonts/IndieFlower.ttf");
+}
+
+html{
+	box-sizing: border-box;
+	margin: 0;
+}
+body{
+	width:  100%;
+	margin:   0;
+	padding:  0;
+	background-color: #F2F2F2;
+	font-family: IndieFlower;
+}
+#cabecera{
+	margin-top: -148px;
+	position: fixed;
+	font-family: IndieFlower;
+	width: 97%;
+	background-color: rbga(0,0,0, .1);
+	text-align: center;
+	padding: 15px;
+	border: 3px solid #0000FF;
+	border-radius: 10px;
+	box-shadow: #5555FF 8px 2px 2px;
+	color: #22ddee;
+}
+#navega{
+	margin-top: 150px;
+	background-color: #555599;
+}
+#barraLateralOne{
+	background-color: #DAA520;
+	float:left;
+	height: 910px;
+	border: 3px solid #FF0000;
+	border-radius: 10px;
+	box-shadow: #5555FF 8px 2px 2px;
+}
+#barraLateralTwo{
+	background-color: #FFFF00;
+	float:right;
+	height: 910px;
+	border: 3px solid #FF0000;
+	border-radius: 10px;
+	box-shadow: #5555FF 8px 2px 2px;
+}
+#contenidoPrincipal{
+	background-color: #9977EE;
+	display: inline;
+}
+#piePrincipal{
+	background-color: #555544;
+	clear: both;
+}
+li{
+	background-color: #9977EE;
+	display: inline;
+}
+img:hover{
+	-webkit-transform: scale(3,3);
+}
+.divisiones{
+	float: left;
+	width: 449px;
+	height: 400px;
+	margin: 5px;
+	border:2px dashed #FFFF11;
+	background-color: #1E98FF;
+	border-radius: 10px;
+}
+.divis{
+	float:left;
+	width:914px;
+	height: 490px;
+	margin: 1px;
+	border: 2px dashed #FFFF11;
+	background-color: #1E98FF;
+	border-radius: 10px;
+}
+.cabeNoticias{
+	width:300px;
+	background-color: #708090;
+	text-align: center;
+	margin: 10px auto;
+	padding: 15px;
+	border: 3px solid #FF0000;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------
+nav ul li{
+	background-color: #00FF00;
+}
+figcaption + p{
+	background-color: #FFFF00;
+}
+
+#navega ul li:nth-child(2){
+	background-color: #FF7700;
+}
+barraLateralTwo blockquote:nth-child(2){
+	background-color: #FF0000;
+}
+article *{
+	color: #FF7700;
+}
+h1, p, footer{
+	color: silver;
+}
+h2.titulo{
+	background-color: #0000FF;
+}*/img{
+	width: 100px;
+	height: 100px;
+}

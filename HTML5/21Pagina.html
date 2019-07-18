@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atributos Dom</title>
+		<style media="screen">
+		div{
+			width: 200px;
+			height: 200px;
+			background:#dddddd;
+			display: inline-block;
+			margin-right: 10px;
+			border:1px solid #aaaaaa;
+		}
+		.azul{
+			background: #0075d9;
+			border: 1px solid #000;
+		}
+		.rojo{
+			background: #ff4136;
+			border: 1px solid #000;
+		}
+		</style>
+	</head>
+	<body>
+		<section id="contentView">
+			<div></div>
+			<div></div>
+		</section>
+		<script type="text/javascript">
+			var element = document.createElement("div");
+			var padre   = document.getElementById("contentView");
+			var ref     = document.getElementsByTagName("div")[0];
+			element.setAttribute("class", "azul");
+			padre.insertBefore(element, ref);
+
+		</script>
+	</body>
+</html>
